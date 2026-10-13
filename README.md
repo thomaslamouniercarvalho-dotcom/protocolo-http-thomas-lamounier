@@ -87,15 +87,25 @@ remove/apaga essas informações
 Códigos de status: o que representa cada família (1xx a 5xx) e o significado de pelo menos 200, 201, 301, 302, 304, 400, 401, 403, 404, 405 e 500. Explique a diferença entre 401 e 403, e entre 301 e 302.
 
 -200 O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida. Uma resposta 200 é cacheável por padrão.(deu tudo certo)
+
 -201 O status HTTP "201 Created" é utilizado como resposta de sucesso, indica que a requisição foi bem sucedida e que um novo recurso foi criado (a request pra criar algo deu bom)
+
 -301 O código de resposta de status de redirecionamento 301 Moved Permanently do protocolo HTTP indica que o recurso requisitado foi movido permanentemente para a URL dada pelo cabeçalho Localização headers ( seu conteudo foi movido permanentemente)
+
 -302 O código de estado HyperText Transfer Protocol (HTTP) 302 Found indica que o recurso foi temporariamente movido para a URL informada pelo cabeçalho Localização (esse muda temporario até voltar a informação então ele não vai voltar até que volte a informação pra ele mas se a informação nunca for voltar ai vira um 301)
+
 -304 O código de resposta HTTP de redirecionamento do cliente 304 Not Modified indica que não há necessidade de retransmitir a requisição de recursos(desde que foi acessado não alterou)
+
 -400 O código de status de resposta HTTP 400 Bad Request indica que o servidor não pode ou não irá processar a requisição devido a alguma coisa que foi entendida como um erro do cliente (ele não consegue ou não pode te dar oque você pediu por que ele entendeu que nesse seu pedido seu navegador tava com algum tipo de problema antes de pedir)
+
 -401 O código de resposta de status de erro do cliente HTTP 401 Unauthorized indica que a solicitação não foi aplicada porque não possui credenciais de autenticação válidas para o recurso de destino.(você pediu só que aquilo que você pediu não tem autorização pra aquilo por que você não tem credenciais para aquilo você é um ze ninguem tentando entrar na casa branca claramente você não tem autorização)
+
 -403 O código de resposta de status de erro do cliente HTTP 403 Forbidden indica que o servidor entendeu o pedido, mas se recusa a autorizá-lo.(aqui é quando você tem as credenciais mas você não foi autorizado)
+
 -404 A resposta de erro 404 Not Found indica que o servidor não conseguiu encontrar o recurso solicitado (não encontrou oque você queria encontrar)
+
 -405 Este status de resposta indica que o verbo HTTP utilizado não é suportado, por exemplo: a requisição ocorre por meio de um get, porém o único método disponível é o post( é quando você tem a chave mas pra entrar na sua casa não adianta ter a chave porque você só entra na sua casa com a chave da sua casa ela é a unica ou uma das unicas que você consegue acessar sua casa porque só aceita esse tipo de chave)
+
 -500 Quando o servidor retorna um código de erro (HTTP) 500, indica que encontrou uma condição inesperada e que o impediu de atender à solicitação.(quando é erro interno no servidor)
 
 Cabeçalhos: para que servem e o papel de pelo menos Content-Type, Content-Length, Location, Allow, Cache-Control, User-Agent e Accept.
