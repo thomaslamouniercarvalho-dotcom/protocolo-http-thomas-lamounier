@@ -1,6 +1,6 @@
 # protocolo-http-thomas-lamounier
 
-#Fundamentação
+**#Fundamentação**
 -Cliente e servidor: o que acontece desde digitar uma URL no navegador até a página aparecer, de forma resumida?
 
 O cliente coloca a URL e o seu navegador e tenta estabelecer uma conexão com o IP/Servidor dai o cliente manda um REQUEST pro SERVER e gera uma resposta o Cliente recebe e o navegador le o conteudo enviado e mostra pro usuario
@@ -62,7 +62,7 @@ res.end(`${html}`);
 aqui eu entreguei um corpo HTML pra mostrar os produtos aqui só to pedindo pra me mostrar uma lista e o corpo é isso ele carrega a estrutura as imagens e outras ele carrega a carga do site
 
 
-#Métodos: GET, POST, PUT, PATCH e DELETE, para que serve cada um, e o que significa um método ser seguro e idempotente.
+**#Métodos: GET, POST, PUT, PATCH e DELETE, para que serve cada um, e o que significa um método ser seguro e idempotente.**
 
 -get
 
@@ -88,7 +88,7 @@ Referencias: textos redigidos com base nas informações adquiridas no site:
 https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods/POST
 https://www.devmedia.com.br/http-get-e-post/41221
 
-#Códigos de status: o que representa cada família (1xx a 5xx) e o significado de pelo menos 200, 201, 301, 302, 304, 400, 401, 403, 404, 405 e 500. Explique a diferença entre 401 e 403, e entre 301 e 302.
+**#Códigos de status: o que representa cada família (1xx a 5xx) e o significado de pelo menos 200, 201, 301, 302, 304, 400, 401, 403, 404, 405 e 500. Explique a diferença entre 401 e 403, e entre 301 e 302.**
 
 -200 O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida. Uma resposta 200 é cacheável por padrão.(deu tudo certo)<small>https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status/200</small>
 
@@ -112,7 +112,7 @@ https://www.devmedia.com.br/http-get-e-post/41221
 
 -500 Quando o servidor retorna um código de erro (HTTP) 500, indica que encontrou uma condição inesperada e que o impediu de atender à solicitação.(quando é erro interno no servidor)<small>https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status/500</small>
 
-#Cabeçalhos: para que servem e o papel de pelo menos Content-Type, Content-Length, Location, Allow, Cache-Control, User-Agent e Accept.
+**#Cabeçalhos: para que servem e o papel de pelo menos Content-Type, Content-Length, Location, Allow, Cache-Control, User-Agent e Accept.**
 
 accept
 -O cabeçalho de requisição HTTP Accept anuncia quais tipos de conteúdo, expressos como MIME types, o cliente é capaz de entender.(ele diz qual deve ser lido e interpretado)<small>https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Headers/Accept</small>
@@ -135,19 +135,23 @@ Cache-control
 User-agent
 -O cabeçalho de requisição User-Agent é uma cadeia de caracteres característica que permite servidores e pares de rede identificar a aplicação, sistema operacional, fornecedor, e/ou versão do agente de usuário requisitante.(ele fala quem é o usuario falando suas crendenciais).<small>https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Headers/User-Agent</small>
 
-#HTTP é stateless: o que isso significa e por que o servidor não lembra de uma requisição para a outra.
+**#HTTP é stateless: o que isso significa e por que o servidor não lembra de uma requisição para a outra.**
 
 O "HTTP é stateless" fala que o http é sem estado/sem memoria porque que ele não armazena memoria ele funciona dessa maneira porque se ele armazena-se dados de todos os usuarios teria um consumo imenso de Ram e eventualmente explodiria com o aumento exponencial da rede, ele opera sem guardar dados para que possa ser escalaval fazendo com que muitos usuarios possam usufruir dele para isso ele trata sempre como se fosse a primeira vez do usuario. o jeito que eles usam para "guardar memoria" no caso é você que guarda com os seus cookies, dai toda vez num pedido e numa resposta ele confirma com seus cookies e identifica você
 
-#HTTP x HTTPS: a diferença, de forma resumida.
+**#HTTP x HTTPS: a diferença, de forma resumida.**
 
 http você faz o envio de pacotes porém esses pacotes não são criptografados então qqlr um pode acessar seu pacote se ele se interferir na rede, ja o https ele pega seu pacote embaralha os dados e manda o pacote criptografado e o servidor e você que tem a chave descriptografa para fazer a leitura
 
 
+**#Conclusão**
 
-FONTE:https://www.devmedia.com.br/http-get-e-post/41221
-https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods/PATCH
-https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status/500
+A maioria dos servidores produzidos em aula foram todos ou com 200 ou 404 porém ao fazer essa aula o 301/Location foi um dos mais legais de se programar e as vezes tem em alguns sites e a gente nem percebe então minha visão sobre servidores mudou para que aparentemente em cada situação existe um numero cituando o erro e em todos meus servidores eu gostaria de destacar exatamente oque aconteceu!
+
+
+DEV_MEDIA. HTTP: GET e POST. Rio de Janeiro: DevMedia, 2020. Disponível em: https://www.devmedia.com.br/http-get-e-post/41221. Acesso em: 15 out. 2026.
+MDN WEB DOCS. PATCH. [S. l.]: MDN Contributors, 2026. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods/PATCH. Acesso em: 15 out. 2026.
+MDN WEB DOCS. 500 Internal Server Error. [S. l.]: MDN Contributors, 2025. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status/500. Acesso em: 15 out. 2026.
 
 Texto redigidos por autoria própria e usado AI apenas para desenvolver linhas de pensamento nenhum texto foi redigido por AI. 
 GOOGLE. Gemini 4 Argon. Ferramenta de inteligência artificial generativa.
@@ -170,4 +174,4 @@ GOOGLE. Gemini 4 Argon. Ferramenta de inteligência artificial generativa.
 Data de uso: 13 out. 2026.
 Finalidade: explicação dos textos lidos no site "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods/PATCH" e suas variantes a depender da seção em que estava se respondendo para melhor compreensão
 Arquivos impactados: README.md
-Oque afetou: Ele fez minha linha de pensamento para escrever sobre os texto
+Oque afetou: Ele fez minha linha de pensamento para escrever sobre os texto (mais a padronização abnt das referencias)
