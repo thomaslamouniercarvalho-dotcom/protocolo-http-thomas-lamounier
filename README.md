@@ -175,3 +175,9 @@ Data de uso: 13 out. 2026.
 Finalidade: explicação dos textos lidos no site "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Methods/PATCH" e suas variantes a depender da seção em que estava se respondendo para melhor compreensão
 Arquivos impactados: README.md
 Oque afetou: Ele fez minha linha de pensamento para escrever sobre os texto (mais a padronização abnt das referencias)
+
+GOOGLE. Gemini 4 Argon. Ferramenta de inteligência artificial generativa.
+Data de uso: 14 out. 2026.
+Finalidade: explicação e aplicação na rota "/busca?termo=valor" 
+Arquivos impactados: README.md
+Oque afetou: routes.js
